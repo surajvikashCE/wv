@@ -1,0 +1,37 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:visibility="gone"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:id="@+id/ed"
+        />
+    <Button
+        android:layout_toEndOf="@id/ed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load"
+        android:layout_gravity="center"
+        android:id="@+id/but"
+        android:layout_toRightOf="@id/ed" />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ed"
+        android:id="@+id/wb1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    </WebView>
+
+
+</RelativeLayout>
